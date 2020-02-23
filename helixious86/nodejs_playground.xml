@@ -20,6 +20,6 @@
       </Port>
     </Publish>
   </Networking>
-  <Icon>https://github.com/helixious/docker-templates/raw/master/helixious86/images/nodejs-logo.png</Icon>
-  <ExtraParams></ExtraParams>
+  <Icon>https://raw.githubusercontent.com/helixious/docker-templates/master/helixious86/images/nodejs-logo.png</Icon>
+  <ExtraParams>-ti</ExtraParams>
 </Container>
