@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container>
+  <TemplateURL>https://raw.githubusercontent.com/helixious/docker-templates/master/nodejs_playground.xml</TemplateURL>
+  <Beta>False</Beta>
+  <Name>NodeJS Playground</Name>
+  <Description>NodeJS development Container</Description>
+  <Registry>https://registry.hub.docker.com/r/helixious86/nodejs_base_image/</Registry>
+  <GitHub>https://github.com/helixious/nodejs_base_image/</GitHub>
+  <Repository>helixious/nodejs_base_image</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Environment/>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>81</HostPort>
+        <ContainerPort>80</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Icon>https://raw.githubusercontent.com/helixious/docker-templates/images/master/nodejs-logo.png</Icon>
+  <ExtraParams></ExtraParams>
+</Container>
