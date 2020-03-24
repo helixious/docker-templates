@@ -21,7 +21,7 @@
 			<Mode/>
 		</Variable>
 	</Environment>
-	<Config Type="Path" Name="Data Directory Path" Target="~/biosboot" Default="/mnt/user/appdata/eos" Mode="rw" Description="This is where EOS will store it's blockchain data" Required="true">/mnt/user/appdata/eos</Config>
+	<Config Type="Path" Name="Data Directory Path" Target="/root" Default="/mnt/user/appdata/eos" Mode="rw" Description="This is where EOS will store it's blockchain data" Required="true">/mnt/user/appdata/eos</Config>
 
 	<Networking>
 		<Mode>bridge</Mode>
