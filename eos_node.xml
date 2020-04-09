@@ -2,22 +2,22 @@
 <Container>
 	<TemplateURL>https://raw.githubusercontent.com/helixious/docker-templates/master/nodejs_playground.xml</TemplateURL>
 	<Beta>False</Beta>
-	<Name>EOS Node</Name>
-	<Description>EOS Node Docker Container</Description>
+	<Name>eoscluster</Name>
+	<Description>EOS Cluster Docker Container</Description>
 	<Registry>https://registry.hub.docker.com/r/helixious86/eos_base_image/</Registry>
-	<GitHub>https://github.com/helixious/eos_base_iamge/</GitHub>
+	<GitHub>https://github.com/helixious/eos_base_image/</GitHub>
 	<Repository>helixious86/eos_base_image</Repository>
 	<BindTime>true</BindTime>
 	<Privileged>false</Privileged>
 	<Environment>
 		<Variable>
-			<Value></Value>
-			<Name>PIVKEY</Name>
+			<Value>3</Value>
+			<Name>NODES</Name>
 			<Mode/>
 		</Variable>
 		<Variable>
-			<Value></Value>
-			<Name>PUBKEY</Name>
+			<Value>SYS</Value>
+			<Name>TOKEN</Name>
 			<Mode/>
 		</Variable>
 	</Environment>
@@ -31,6 +31,19 @@
 				<ContainerPort>8888</ContainerPort>
 				<Protocol>tcp</Protocol>
 			</Port>
+
+			<Port>
+				<HostPort>8889</HostPort>
+				<ContainerPort>8889</ContainerPort>
+				<Protocol>tcp</Protocol>
+			</Port>
+
+			<Port>
+				<HostPort>8890</HostPort>
+				<ContainerPort>8890</ContainerPort>
+				<Protocol>tcp</Protocol>
+			</Port>
+
 			<Port>
 				<HostPort>2222</HostPort>
 				<ContainerPort>22</ContainerPort>
